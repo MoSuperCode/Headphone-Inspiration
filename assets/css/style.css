@@ -1,0 +1,315 @@
+/* Assets:
+Font: Work sans
+Farben: #2e2e2e / #867772 / rgb(234, 204, 194) / #ebccc2 / #fff / rgb(115, 115, 115) 
+ */
+
+@font-face {
+    font-family: WorkSans;
+    src: url("/assets/fonts/Work_Sans/static/WorkSans-Regular.ttf");
+}
+body {
+background-color: #2E2D2E;
+font-family: WorkSans;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+a {
+color:#ebccc2;
+font-size: 2em;
+letter-spacing: 1.5px;
+}
+/* ?============================== */
+/* !=========== HEADER =========== */
+/* ?============================== */
+header {
+    position: fixed;
+    width: 100%;
+}
+div.socialMedia{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2%;
+    padding: 2.4em 10px;
+}
+div.center {
+    display: flex;
+    gap: 7px;
+}
+ul.socialMedia {
+    display: flex;
+    justify-content: space-around;
+    gap: 4.4em;
+
+}
+ul.socialMedia li {
+    list-style: none;
+}
+ul.socialMedia li a {
+    text-decoration: none;
+    color:#867772;
+    font-size: 13px;
+}
+ul.socialMedia li a:hover{
+    text-decoration: underline 2px;
+    text-underline-position: under;
+}
+/* ?============================== */
+/* !======== MAIN About1 ========= */
+/* ?============================== */
+/* ====== Section1 ======= */
+.headline {
+    color: #ebccc2;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 34px;
+}
+
+h1.about  {
+    padding-top: 6em;
+    margin: 0 30vw 18vh 28vw;
+}
+section img.about1{
+    width: 90%;
+    margin: 0 5%
+}
+/* ====== Section2 ======= */
+section.bs1 {
+    margin: 13.6em 20em 35vh 22em;
+    display: flex;
+    justify-content: space-between;
+}
+img.bs1 {
+    width: 50em;
+}
+section.bs1 article {
+    display: flex;
+    flex-direction: column;
+    width: 45em;
+    gap: 2.4em;
+    justify-content: center;
+}
+p {
+    color:rgb(115, 115, 115);
+    word-spacing: 1.1px;
+    line-height: 25px;
+    font-size: 1.55em;
+}
+/* ?============================== */
+/* !== MAIN Lounger, Experience == */
+/* ?============================== */
+section.lounger, section.experience {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.lounger img, section.experience img {
+    width: 56%;
+    height: 100vh;
+    object-fit: cover;
+}
+article.lounger, article.experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 13em 0 5em;
+}
+article.lounger h2, article.experience h2{
+    margin-bottom:2em ;
+}
+/* ?============================== */
+/* !== MAIN Inspiration == */
+/* ?============================== */
+video {
+    display: block;
+    width: 55.5%;
+    margin: 0vh auto;
+    padding-top: 15em;
+}
+article.three{
+    margin: 15em 28em ;
+}
+
+h2.three {
+    font-size: 4rem;
+    margin-top: 1.5rem;
+}
+article.three button {
+font-size: 12px;
+margin-bottom: 1em;
+margin-top: 4em;
+margin-right: 4px;
+padding:7px 15px;
+background-color: #2E2D2E;
+border: white 1.5px solid;
+color: #867772;
+letter-spacing: 2px;
+}
+/* ====== section 1 =====*/
+section.alchemy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.alchemy img {
+width: 43em;
+margin-right:2em ;
+}
+section.alchemy article {
+    display: flex;
+    flex-direction: column;
+    width: 395px;
+}
+section.alchemy article h2 {
+    margin: 1.3rem 0 2.3rem 0
+}
+
+/* ====== section 2 
+        architecture  =====*/
+        section.architecture {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20vh;
+        }
+        section.architecture img {
+        width: 43em;
+        margin-left:4.5em ;
+        }
+        section.architecture article {
+            display: flex;
+            flex-direction: column;
+            width: 395px;
+        }
+        section.architecture article h2 {
+            margin: 1.3rem 0 2.3rem 0
+        }
+/* ?============================== */
+/* !========== MAIN Shop ========= */
+/* ?============================== */
+section.shop {
+    display: flex;
+    justify-content: space-between;
+}
+section.shop img.comp {
+    width: 56%;
+    height: 100vh;
+    object-fit: cover;
+}
+section.shop figure {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+figcaption {
+    margin-bottom: 0.8rem;
+}
+.argilla {
+    margin-bottom: 1.2rem;
+}
+section.shop figure img {
+    width: 500px;
+}
+figure button {
+    margin: 2px;
+    padding: 7px 30px ;
+    background-color:rgb(234, 204, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+/* ?========================= */
+/* !======== Footer ========= */
+/* ?========================= */
+.mainnav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 15vw;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.mainnav a {
+    text-decoration: none;
+    color: rgb(234, 204, 194);
+    font-size: 1.5rem;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-left: 8rem
+}
+
+.mainnav a:hover {
+    color: #fff;
+}
+
+/* !strich */
+.mainnav a::before {
+    content: "";
+    position: absolute;
+    left: 2.35rem;
+    height: 5.5rem;
+    border-left: 2px solid #867772;
+    z-index: -1;
+    margin-top: 2rem;
+}
+
+/* !Damit letzter Strich weg */
+
+.mainnav .last::before {
+    content: "";
+    position: absolute;
+    left: 2.35rem;
+    height: 5.5rem;
+    border-left: 0px solid white;
+}
+
+.mainnav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainnav li {
+    vertical-align: top;
+    color: #867772;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 8rem;
+}
+
+.mainnav li::before {
+    display: flex;
+    position: absolute;
+    content: "";
+    left: 1.7rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    border: 2px solid #867772;
+}
+
+.mainnav .active::before {
+    display: flex;
+    position: absolute;
+    left: 15.8px;
+    width: 1.5rem;
+    height: 1.5rem;
+    outline-offset: 5px;
+    outline-width: 1px;
+    outline-color: white;
+    outline-style: solid;
+}
